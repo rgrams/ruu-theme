@@ -1,15 +1,18 @@
 
+local basePath = (...):match("(.-)fonts$")
+basePath = basePath:gsub("%.", "/")
+
 local fnt = {
-	default = {"theme/font/OpenSans-Semibold.ttf", 14},
+	default = {basePath .. "font/OpenSans-Semibold.ttf", 14},
 
-	button = {"theme/font/OpenSans-Semibold.ttf", 14},
-	menuTitle = {"theme/font/OpenSans-Semibold.ttf", 36},
+	button = {basePath .. "font/OpenSans-Semibold.ttf", 14},
+	menuTitle = {basePath .. "font/OpenSans-Semibold.ttf", 36},
 
-	keyCast = {"theme/font/OpenSans-Semibold.ttf", 18},
-	overlayMsg = {"theme/font/OpenSans-Semibold.ttf", 16},
-	files = {"theme/font/OpenSans-Regular.ttf", 12},
-	panelTitle = {"theme/font/OpenSans-Semibold.ttf", 16},
-	viewportGrid = {"theme/font/OpenSans-Regular.ttf", 12}
+	keyCast = {basePath .. "font/OpenSans-Semibold.ttf", 18},
+	overlayMsg = {basePath .. "font/OpenSans-Semibold.ttf", 16},
+	files = {basePath .. "font/OpenSans-Regular.ttf", 12},
+	panelTitle = {basePath .. "font/OpenSans-Semibold.ttf", 16},
+	viewportGrid = {basePath .. "font/OpenSans-Regular.ttf", 12}
 }
 
 return fnt
