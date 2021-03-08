@@ -1,6 +1,6 @@
 
-local basePath = (...):gsub('[^%.]+$', '')
-local Class = require(basepath .. "base-class")
+local basePath = (...):match("(.-)theme$")
+local Class = require(basePath .. "base-class")
 
 local M = {}
 
